@@ -1,0 +1,236 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+body{
+    background-color: hsl(148, 38%, 91%);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-size: 16px;
+    position: relative;
+    height: 100%;
+    padding-bottom: 50px;
+}
+.visible{
+    display: block;
+}
+.container{
+    background-color: hsl(0, 0%, 100%);
+    max-width: 90%;
+    padding: 25px;
+    font-size: 16px;
+    border-radius: 16px;
+    position: relative;
+    padding-top: 0px;
+    position: relative;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+h2{
+    font-size: 25px;
+    color: hsl(187, 24%, 22%);
+    font-weight: 700;
+}
+label{
+    display: block;
+    color: hsl(187, 24%, 22%);
+}
+input{
+    width: 100%;
+    height: 40px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    border-radius:8px;
+    border: 1px solid hsl(186, 15%, 59%);
+
+    outline: none;
+    padding-left: 15px;
+}
+input:hover{
+    cursor: url('./assets/images/pointinghand.svg' ), pointer;
+    border: 1px solid hsl(169, 82%, 27%);
+}
+.item:hover{
+    background-color: hsl(148, 38%, 91%);
+    border: 1px solid hsl(169, 82%, 27%);
+
+}
+span{
+    color: hsl(169, 82%, 27%);
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 0;
+}
+.error{
+    color: hsl(0, 66%, 54%);
+}
+.row{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.row p{
+    margin: 0px;
+}
+.flex{
+    
+}
+.custom-radio{
+    width: 2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    appearance: none; /* Remove default styling */
+    width: 22px; /* Set the size */
+    height:22px !important;
+    border:2px solid hsl(148, 38%, 91%); /* Border styling */
+    border-radius: 50%; /* Make it round */
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem !important;
+}
+.custom-radio:checked {
+    border-color: hsl(169, 82%, 27%); /* Checked border color */
+}
+
+.custom-radio:checked::before {
+    content: '';
+    display: block;
+    width: 12px; /* Inner circle size */
+    height: 12px;
+    background-color: hsl(169, 82%, 27%); /* Inner circle color */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.item{
+    display: flex;
+    height: 39px;
+    align-items: center;
+    color: hsl(187, 24%, 22%);
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 0.5em;
+    gap: 10px;
+
+}
+.Message{
+    
+    display: flex;
+    flex-direction: column;
+     gap: 8px;
+}
+.Message textarea {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 120px;
+    width: 100%;
+    resize: none; /* Prevents the user from resizing the textarea */
+    overflow-y: auto; /* Allows vertical scrolling if content overflows */
+    box-sizing: border-box; /* Ensures padding is included within the width */
+    outline: none;
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.Message {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.error {
+    color: hsl(0, 66%, 54%);
+    font-size: 14px;
+    margin: 0px;
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+
+.check{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-left: 0px;
+}
+
+.box{
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+button{
+    padding: 13px;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(169, 82%, 27%);
+    color: white;
+}
+.box label:hover{
+    cursor: url('./assets/images/pointinghand.svg' ), pointer;
+
+}
+.absolute{
+    position: absolute;
+    padding: 20px;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    background-color: hsl(187, 24%, 22%);
+    color: hsl(0, 0%, 100%);
+    max-width: 90%;
+    margin-top: 30px;
+}
+.absolute h2{
+    margin: 0;
+    display: inline-block;
+    color: hsl(0, 0%, 100%);
+  
+}
+.absolute p{
+    font-size: 14px;
+}
+@media(min-width: 500px){
+    .absolute{
+    top: 60px;
+        
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        align-items: center;
+    }
+    .container{
+        width: 50%;
+        
+    }
+    .box{
+        height: 40px;
+        align-items: center;
+    }
+    .flex{
+        flex-direction: row;
+    }
+    .flex div{
+        width: 100%;
+    }
+}
+

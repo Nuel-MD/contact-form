@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="styles.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form novalidate>
+      <div class="flex">
+        <div class="first Name">
+          <label for="firstName">First Name  <span>*</span></label>
+          <input  type="text" id="firstName" name="text" required>
+          <label class="error" for="firstName">This field is required</label>
+        </div>
+        <div class="Last Name">
+          <label for="lastName">Last Name <span>*</span></label>
+          <input  type="text" id="lastName" name="text" required>
+          <label class="error" for="firstName">This field is required</label>
+        </div>
+      </div>
+
+      <div class="email">
+      <label for="email">Email Address <span>*</span></label>
+      <input  type="email" id="email" name="email" required>
+      <label class="error" for="email">Please enter a valid email address</label>
+      </div>
+
+      <div class="row">
+        <p>Query Type</p>
+      <div class="flex" id="radio">
+
+        <div class="item">
+          <input class="custom-radio" type="radio" id="General" name="radio" value="General">
+          <label class="TICK" for="General">General Enquiry</label>
+        </div>
+        <div class="item">
+          <input class="custom-radio" type="radio" id="support" name="radio" value="support">
+          <label class="TICK" for="support">Support Request</label>
+        </div>
+      </div>
+      <label class="error" for="radio">Please select a query type</label>
+      </div>
+
+
+    
+
+      <div class="Message">
+        <label for="message">Message <span>*</span></label>
+        <textarea id="message" name="text" required></textarea>
+        <label class="error" for="message">This field is required</label>
+      </div>
+      
+      <div class="ticked">
+        <div class="box">
+          <input id="tick" style="display: ;" type="checkbox" class= "check" name="checkbox" required>
+          <svg style="display: none;" class= "check"  xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 18 18"><path fill="#0C7D69" d="M16.5 0h-15A1.5 1.5 0 0 0 0 1.5v15A1.5 1.5 0 0 0 1.5 18h15a1.5 1.5 0 0 0 1.5-1.5v-15A1.5 1.5 0 0 0 16.5 0Zm-3.22 7.28-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.751.751 0 0 1 1.06 1.06Z"/></svg>
+
+        <label for="check" >I consent to being contacted by the team <span>*</span></label>
+  
+        </div>
+        <p class="error">To submit this form, please consent to being contacted</p>
+      </div>
+      
+
+
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  
+  <div style="display: none;" class="absolute">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" fill="none" viewBox="0 0 20 21"><path fill="#fff" d="M14.28 7.72a.748.748 0 0 1 0 1.06l-5.25 5.25a.748.748 0 0 1-1.06 0l-2.25-2.25a.75.75 0 1 1 1.06-1.06l1.72 1.72 4.72-4.72a.75.75 0 0 1 1.06 0Zm5.47 2.78A9.75 9.75 0 1 1 10 .75a9.76 9.76 0 0 1 9.75 9.75Zm-1.5 0A8.25 8.25 0 1 0 10 18.75a8.26 8.26 0 0 0 8.25-8.25Z"/></svg>
+
+    <h2>Message Sent!</h2>
+    <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
